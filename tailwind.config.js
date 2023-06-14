@@ -4,6 +4,7 @@ export default {
     extend: {
       fontFamily: {
         sans: ["Inter", "sans-serif"],
+        brand: ["'Berkshire Swash'", "sans-serif"],
         display: ["Urbanist", "sans-serif"],
       },
     },

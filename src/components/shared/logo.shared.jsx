@@ -6,11 +6,7 @@ import { appConfig } from "common/configs.common";
 
 // Component: Presentation
 export const LogoUi = () => {
-  return (
-    <span className="text-2xl text-neutral-800 font-display">
-      {appConfig.appName}
-    </span>
-  );
+  return <span className="font-brand">{appConfig.appName}</span>;
 };
 
 // Component: Logic
