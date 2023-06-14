@@ -1,0 +1,49 @@
+{
+  // React
+  "New React Component": {
+    "prefix": "nrc",
+    "scope": "javascript,javascriptreact",
+    "description": "New React Component",
+    "body": [
+      "// Modules",
+      "import React from \"react\";",
+      "",
+      "// Component: Presentation",
+      "export const ${1:ComponentName}Ui = () => {",
+      "  return <div className=\"flex\">$0</div>;",
+      "};",
+      "",
+      "// Component: Logic",
+      "export const ${1:ComponentName} = () => {",
+      "  return <${1:ComponentName}Ui />;",
+      "};",
+      ""
+    ]
+  },
+  // React
+  "New Memoized React Component": {
+    "prefix": "nmrc",
+    "scope": "javascript,javascriptreact",
+    "description": "New Memoized React Component",
+    "body": [
+      "// Modules",
+      "import React from \"react\";",
+      "",
+      "// Component: Presentation",
+      "export const ${1:ComponentName}Ui = () => {",
+      "  return <div className=\"flex\">$0</div>;",
+      "};",
+      "",
+      "// Component: Logic",
+      "export const ${1:ComponentName}Logic = (props) => {",
+      "  return <${1:ComponentName}Ui {...props} />;",
+      "};",
+      "",
+      "// Component: Memo",
+      "export const ${1:ComponentName} = React.memo((props) => {",
+      "  return <${1:ComponentName}Logic {...props} />;",
+      "});",
+      ""
+    ]
+  },
+}
