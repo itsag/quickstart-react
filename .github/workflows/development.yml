@@ -10,7 +10,8 @@ jobs:
     name: Build and Deploy
     runs-on: ubuntu-latest
     environment:
-      - Development
+      name: Development
+      url: https://dev.domain.app
     steps:
       # Checkout
       - name: Checkout
