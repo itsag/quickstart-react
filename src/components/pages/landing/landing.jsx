@@ -5,25 +5,28 @@ import React from "react";
 import { Logo } from "components/shared/logo.shared";
 
 // Component: Presentation
-export const NotFoundUi = () => {
+export const LandingUi = () => {
   return (
     <div className="w-full h-full flex items-center justify-center">
       <div className="w-[460px] m-auto flex flex-col items-center p-6">
         <div className="animate__animated animate__bounceIn mb-2">
-          <span className="text-2xl text-neutral-800 font-display font-bold">
-            Page Not Found
+          <span className="text-2xl text-gray-800 font-display font-bold">
+            Up and Running
           </span>
         </div>
 
         <div className="animate__animated animate__fadeInUp animate__delay-1s text-center mb-8">
-          <span className="text-neutral-600">
-            The page you are looking for does not exist. You may have followed a
-            broken link or the page might have been moved or deleted.
+          <span className="text-gray-600">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Incidunt
+            earum corrupti cupiditate. Aliquid officia iure atque provident
+            natus.
           </span>
         </div>
 
         <div className="animate__animated animate__fadeInUp animate__delay-2s">
-          <Logo />
+          <span className="text-2xl text-gray-800">
+            <Logo />
+          </span>
         </div>
       </div>
     </div>
@@ -31,6 +34,6 @@ export const NotFoundUi = () => {
 };
 
 // Component: Logic
-export const NotFound = () => {
-  return <NotFoundUi />;
+export const Landing = () => {
+  return <LandingUi />;
 };
