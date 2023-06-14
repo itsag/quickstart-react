@@ -2,16 +2,19 @@
 import React from "react";
 import { Routes, Route } from "react-router-dom";
 
+// Pages: Landing
+import { Landing } from "components/pages/landing/landing";
+
 // Pages: Not Found
-import { NotFound } from "components/not-found/not-found";
+import { NotFound } from "components/pages/not-found/not-found";
 
 // Component: Presentation
-export const StartUi = () => {
+export const AppSplashUi = () => {
   return (
     <div className="w-[100dvw] h-[100dvh] flex">
       <Routes>
         {/* Landing */}
-        <Route path="/" element="You have landed!" />
+        <Route path="/" element={<Landing />} />
 
         {/* Not Found */}
         <Route path="*" element={<NotFound />} />
@@ -21,6 +24,6 @@ export const StartUi = () => {
 };
 
 // Component: Logic
-export const Start = () => {
-  return <StartUi />;
+export const AppSplash = () => {
+  return <AppSplashUi />;
 };

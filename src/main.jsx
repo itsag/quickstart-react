@@ -7,16 +7,17 @@ import { createRoot } from "react-dom/client";
 import "styles/app.styles.css";
 
 // Components
-import { Start } from "components/start";
+import { AppSplash } from "components/app-splash";
+import { AppErrorBoundary } from "components/app-error-boundary";
 
 // Create Root
 const app = createRoot(document.getElementById("root"));
 
 // Render
 app.render(
-  <React.StrictMode>
+  <AppErrorBoundary>
     <BrowserRouter>
-      <Start />
+      <AppSplash />
     </BrowserRouter>
-  </React.StrictMode>
+  </AppErrorBoundary>
 );
